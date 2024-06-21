@@ -10,7 +10,7 @@ const headers = {
 
 export const fetchCommits = async (author, startDate, endDate, itemsPerPage, page) => {
   const response = await axios.get(
-    `${GITHUB_API_URL}/search/commits?q=org:saltpay+author:${author}+committer-date:${startDate}..${endDate}&per_page=${itemsPerPage}&page=${page}`,
+    `${GITHUB_API_URL}/search/commits?q=org:xyz+author:${author}+committer-date:${startDate}..${endDate}&per_page=${itemsPerPage}&page=${page}`,
     { headers }
   );
   return response.data;
@@ -18,7 +18,7 @@ export const fetchCommits = async (author, startDate, endDate, itemsPerPage, pag
 
 export const fetchPullRequests = async (author, startDate, endDate, itemsPerPage, page) => {
   const response = await axios.get(
-    `${GITHUB_API_URL}/search/issues?q=type:pr+org:saltpay+author:${author}+created:${startDate}..${endDate}&per_page=${itemsPerPage}&page=${page}`,
+    `${GITHUB_API_URL}/search/issues?q=type:pr+org:xyz+author:${author}+created:${startDate}..${endDate}&per_page=${itemsPerPage}&page=${page}`,
     { headers: { ...headers, 'Accept': 'application/vnd.github.v3+json' } }
   );
   return response.data;
