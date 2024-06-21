@@ -1,6 +1,6 @@
-#how to use
+# how to use
 
-Add github token to env file
+Add github token to env file. \
 Change name of org in API.js
 
 # Getting Started with Create React App
