@@ -1,3 +1,8 @@
+#how to use
+
+Add github token to env file
+Change name of org in API.js
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
